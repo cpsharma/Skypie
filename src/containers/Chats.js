@@ -11,6 +11,7 @@ const Chat = ({ message }) => {
         store.dispatch(setTypingValue(text));
     };
     return (
+        
         <span className={`Chat ${is_user_msg ? "is-user-msg" : ""}`} onClick={is_user_msg ? handleEdit : () => { }}> {text}</span >
     );
 };
